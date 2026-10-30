@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Đồng Văn Thế - 20225408</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f2f2f2;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0 0 .5rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      border-bottom: 2px solid #1f4e8c;
+      padding-bottom: .3rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    section,
+    footer {
+      background: #fff;
+      padding: 1rem;
+    }
+
+    header {
+      background: #1f4e8c;
+      color: #fff;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: .75rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .layout {
+      max-width: 1200px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    aside,
+    main {
+      display: grid;
+      gap: 1rem;
+      align-content: start;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: .5rem;
+    }
+
+    .avatar {
+      width: 8rem;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .timeline article {
+      border-left: 3px solid #1f4e8c;
+      padding-left: .75rem;
+      margin-bottom: .75rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .project {
+      border: 1px solid #ccc;
+    }
+
+    .project div {
+      padding: .5rem;
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .projects {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .layout {
+        grid-template-columns: 1fr 2.5fr;
+      }
+
+      .projects {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <strong>Đồng Văn Thế</strong>
+      <nav>
+        <ul>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#education">Học vấn</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#activities">Hoạt động</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <section class="profile">
+        <img class="avatar"
+          src="avatar.png"
+          alt="Ảnh đại diện">
+        <h1>Đồng Văn Thế</h1>
+        <p>MSSV 20225408<br>Công nghệ thông tin, ĐH Bách khoa Hà Nội</p>
+        <p>Mục tiêu: trở thành lập trình viên web.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Liên hệ</h2>
+        <address>
+          <ul>
+            <li>Email: dongvanthe2606@gmail.com</li>
+            <li>GitHub: github.com/donThe04</li>
+          </ul>
+        </address>
+      </section>
+
+      <section id="skills">
+        <h2>Kỹ năng</h2>
+        <h3>Chuyên môn</h3>
+        <ul>
+          <li>HTML, CSS</li>
+          <li>C/C++</li>
+          <li>JavaScript cơ bản</li>
+        </ul>
+        <h3>Kỹ năng mềm</h3>
+        <ul>
+          <li>Làm việc nhóm</li>
+          <li>Thuyết trình</li>
+        </ul>
+      </section>
+
+      <section id="languages">
+        <h2>Ngoại ngữ</h2>
+        <ul>
+          <li>Tiếng Anh: IELTS 6.5</li>
+          <li>Tiếng Nhật: N5</li>
+        </ul>
+      </section>
+
+      <section id="interests">
+        <h2>Sở thích</h2>
+        <ul>
+          <li>Đọc sách</li>
+          <li>Chạy bộ</li>
+          <li>Nhiếp ảnh</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h2>Giới thiệu</h2>
+        <p>Mình là sinh viên năm tư ngành Công nghệ thông tin, thích làm giao diện web gọn gàng và dễ dùng.</p>
+      </section>
+
+      <section id="education">
+        <h2>Học vấn</h2>
+        <div class="timeline">
+          <article><strong>2022 – 2026</strong>
+            <p>Đại học Bách khoa Hà Nội</p>
+          </article>
+          <article><strong>2019 – 2022</strong>
+            <p>THPT Tứ Sơn</p>
+          </article>
+          <article><strong>2015 – 2019</strong>
+            <p>THCS Lục Sơn</p>
+          </article>
+          <article><strong>2010 – 2015</strong>
+            <p>Tiểu học Lục Sơn</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Dự án</h2>
+        <div class="projects">
+          <article class="project">
+            <img alt="Quản lý thư viện"
+              src="avatar.png">
+            <div>
+              <h3>Quản lý thư viện</h3>
+              <p>Ứng dụng C++ quản lý sách, bài tập lớn.</p>
+            </div>
+          </article>
+          <article class="project">
+            <img alt="Ứng dụng ghi chú"
+              src="avatar.png">
+            <div>
+              <h3>Ứng dụng ghi chú</h3>
+              <p>Web ghi chú bằng HTML, CSS, JS (dự án nhóm).</p>
+            </div>
+          </article>
+          <article class="project">
+            <img alt="Trang portfolio"
+              src="avatar.png">
+            <div>
+              <h3>Trang portfolio</h3>
+              <p>Trang giới thiệu cá nhân responsive.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="activities">
+        <h2>Hoạt động và thành tích</h2>
+        <ul>
+          <li>Thành viên CLB Lập trình (2023 – nay)</li>
+          <li>Giải Ba Tin học sinh viên cấp trường, 2021</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>Đồng Văn Thế - MSSV 20225408</footer>
+
+</body>
+
+</html>

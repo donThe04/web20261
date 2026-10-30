@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.box {
+    flex: 1 1 200px;
+    max-width: 300px;
+
+    background-color: aquamarine;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 18px;
+
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}

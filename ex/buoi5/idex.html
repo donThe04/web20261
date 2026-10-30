@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo tài khoản Google</title>
+
+    <style>
+        body {
+            width: 500px;
+            height: 30px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .input-group {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        #itemInput {
+            width: 80%;
+            height: auto;
+        }
+
+        #itemList {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-group">
+        <input type="text" id="itemInput">
+        <button id="addButton">Add</button>
+    </div>
+
+    <ul id="itemList"></ul>
+
+    <script>
+        let elements = document.getElementById("itemInput");
+        let btn = document.getElementById("addButton");
+        let list = document.getElementById("itemList");
+
+        btn.addEventListener("click", () => {
+            let text = elements.value;
+
+            let li = document.createElement("li");
+            li.textContent = text;
+
+            list.appendChild(li);
+
+            elements.value = "";
+        });
+    </script>
+</body>
+
+</html>
