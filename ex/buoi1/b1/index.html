@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo tài khoản Google</title>
+</head>
+
+<body>
+
+    <h1>Tạo tài khoản Google</h1>
+
+    <form action="/submit" method="POST" name="registerForm">
+
+        Họ:
+        <input type="text" name="firstName" required>
+
+        Tên:
+        <input type="text" name="lastName" required>
+
+        <br><br>
+
+        Tên người dùng:
+        <input type="email" name="email" pattern=".+@gmail\.com" required
+            oninvalid="this.setCustomValidity('Vui lòng nhập email Gmail hợp lệ')" 
+            oninput="this.setCustomValidity('')">
+        <br><br>
+
+        Mật khẩu:
+        <input type="password" name="password" min="4">
+
+        Xác nhận:
+        <input type="password" name="confirmPassword">
+
+        <br><br>
+
+        <input type="checkbox" id="showPassword">
+        <label for="showPassword">Hiện mật khẩu</label>
+
+        <br><br>
+
+        <button type="button">Đăng nhập</button>
+        <button type="submit">Tiếp theo</button>
+
+    </form>
+
+</body>
+
+</html>
